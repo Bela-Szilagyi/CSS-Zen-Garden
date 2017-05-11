@@ -1,3 +1,4 @@
+
 /* colors from dark tolight:
     black olive #403E40
     ebony #5E5C5E
@@ -11,26 +12,34 @@
 body {
     background-image: url("background.jpg");
     background-repeat: round;
-    font-family: 'Calligraffitti', cursive, sans-serif;
+    font-family: 'Calligraffitti', sans-serif;
+    text-align: justify;
 }
 
-/*
-.page-wrapper {
-    position: relative;
-}
-*/
+h1 {text-transform: uppercase; letter-spacing: 6px; font-weight: 900; }
+h2 {text-transform: uppercase; letter-spacing: 2px; font-weight: 300; }
+h3 {text-align: right}
+p {font-weight: 100; }
+a {color: white}
+
+/* page-wrapper */
+
+.intro {text-align-last: center}
 
 header { background: #868486; position: relative; display: block;
-    top: 10px; width: 24%; height: 24%; left: 30%; margin-left: -12%; /*half of width */   
-    color: #E6E4E6; padding: 10px; text-align: center; border-radius: 8px; }
+    top: 10px; width: 24%; height: 24%; left: 50%; margin-left: -12%; /*half of width */   
+    color: #E6E4E6; padding: 10px; border-radius: 8px; }
 
 .summary { background: #5E5C5E; position: relative; display: block;
-    top: -8px; width: 32%; height: 32%; left: 30%; margin-left: -16%; /*half of width */   
-    color: #E6E4E6; padding: 10px; text-align: center; border-radius: 12px; z-index: -1; }
+    top: -8px; width: 32%; height: 32%; left: 50%; margin-left: -16%; /*half of width */   
+    color: #E6E4E6; padding: 10px; border-radius: 12px; z-index: 1; }
 
 .preamble { background: #403E40; position: relative; display: block;
-    top: -28px; width: 40%; height: 40%; left: 30%; margin-left: -20%; /*half of width */   
-    color: #E6E4E6; padding: 10px; text-align: center; border-radius: 16px;  z-index: -2; }
+    top: -28px; width: 40%; height: 40%; left: 50%; margin-left: -20%; /*half of width */   
+    color: #E6E4E6; padding: 10px; border-radius: 16px;  z-index: -1; }
+
+
+/* sidebar */
 
 aside {float: right}
 
@@ -61,83 +70,31 @@ ul {display: none}
 .zen-resources:hover ul {background: #868486; display: block;
     color: #E6E4E6; padding: 10px; text-align: center; border-radius: 16px;}
 
-/*
-.intro {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ), 
-    url(header_background.jpg);
-  background-size: cover;
-  height: 100vh;
-}
 
-header {
-  position: absolute;
-  top: 63%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
+/* main */
 
-.summary, .preamble {
-    float: right;
-    color: white;
-    width: 35%;
-    clear: right;
-    margin-top: 8%;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+.explanation { float: left; position: relative;
+    background: #5E5C5E; color: #E6E4E6; padding: 10px; border-radius: 12px; 
+    width: 30%; left: 18%; margin-left: -18%; 
+    height: 300px; overflow: auto;}
+.participation { float: left; position: absolute; z-index: 4; 
+    background: #868486; color: #E6E4E6; padding: 10px; border-radius: 12px; 
+    width: 30%; left: 50%; margin-left: -18%; 
+    height: 300px; overflow: auto;}
+.benefits { float: left; position: absolute; 
+    background: #5E5C5E; color: #E6E4E6; padding: 10px; border-radius: 12px; 
+    width: 30%; left: 82%; margin-left: -18%; 
+    height: 300px; overflow: auto;}
 
-#zen-supporting {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
-    ), 
-    url(main_background.jpg);
-  background-size: cover;
-  height: 100vh;
-}
-*/
+.requirements {float: left; clear: both; 
+    width: 90%; margin-left: 5%; margin-right: 5%; margin-top: 10px;  border-radius: 12px;
+    background: #403E40; color: #E6E4E6; padding: 10px;}
 
 
-/*
-.sidebar {
-    position: fixed;
-    top: 0%;
-    background:gray;
-    width: 100%;    
-}
+/* footer */
 
-.design-selection, .design-archives, .zen-resources {
-    display: inline-block;
-    /* float: left; */
-    /* color: white;
-    margin-left: 10px;
-    position: relative;
-}
-
-li {
-    display: none;
-}
-
-.design-selection:hover li {
-    display: block;
-    position: absolute;
-}
-
-.design-archives:hover li {
-    display: block;
-    position: absolute;
-}
-
-.zen-resources:hover li {
-    display: block;
-    position: absolute;
-}
-*/
+footer {float: left; clear: both; 
+    width: 40%; margin-left: 30%; margin-right: 30%; margin-top: 10px;  border-radius: 12px; height: 1rem;
+    background: #5E5C5E; 
+    text-align: center; line-height: 1rem; vertical-align: middle; padding: 1rem; word-spacing: 30px;
+    text-transform: uppercase; }
