@@ -1,3 +1,37 @@
+/* colors from dark tolight:
+    black olive #403E40
+    ebony #5E5C5E
+    old silver #868486
+    quick silver #A5A3A5
+    platinum #E6E4E6
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: round;
+    font-family: 'Calligraffitti', cursive, sans-serif;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+header {
+    background: #403E40;
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 24%;
+    left: 50%;
+    margin-left: -12%; /*half of width */   
+    color: #E6E4E6;
+    padding: 10px;
+    text-align: center;
+}
+
+/*
 .intro {
   background: 
     linear-gradient(
@@ -29,6 +63,20 @@ header {
     padding-right: 10px;
 }
 
+#zen-supporting {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), 
+    url(main_background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+*/
+
+
+/*
 .sidebar {
     position: fixed;
     top: 0%;
@@ -39,7 +87,7 @@ header {
 .design-selection, .design-archives, .zen-resources {
     display: inline-block;
     /* float: left; */
-    color: white;
+    /* color: white;
     margin-left: 10px;
     position: relative;
 }
@@ -62,3 +110,4 @@ li {
     display: block;
     position: absolute;
 }
+*/
