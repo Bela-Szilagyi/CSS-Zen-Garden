@@ -28,3 +28,37 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0%;
+    background:gray;
+    width: 100%;    
+}
+
+.design-selection, .design-archives, .zen-resources {
+    display: inline-block;
+    /* float: left; */
+    color: white;
+    margin-left: 10px;
+    position: relative;
+}
+
+li {
+    display: none;
+}
+
+.design-selection:hover li {
+    display: block;
+    position: absolute;
+}
+
+.design-archives:hover li {
+    display: block;
+    position: absolute;
+}
+
+.zen-resources:hover li {
+    display: block;
+    position: absolute;
+}
