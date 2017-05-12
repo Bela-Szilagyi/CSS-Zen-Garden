@@ -31,7 +31,7 @@ header { background: #868486; position: relative; display: block;
     color: #E6E4E6; padding: 10px; border-radius: 8px; }
 
 .summary { background: #5E5C5E; position: relative; display: block;
-    top: -8px; width: 32%; height: 32%; left: 50%; margin-left: -16%; /*half of width */   
+    top: -12px; width: 32%; height: 32%; left: 50%; margin-left: -16%; /*half of width */   
     color: #E6E4E6; padding: 10px; border-radius: 12px; z-index: 1; }
 
 .preamble { background: #403E40; position: relative; display: block;
@@ -90,11 +90,9 @@ ul {display: none}
     width: 90%; margin-left: 5%; margin-right: 5%; margin-top: 10px;  border-radius: 12px;
     background: #403E40; color: #E6E4E6; padding: 10px;}
 
-
-/* footer */
-
-footer {float: left; clear: both; 
-    width: 40%; margin-left: 30%; margin-right: 30%; margin-top: 10px;  border-radius: 12px; height: 1rem;
+footer a {float: left; display: inline-block; 
+    width: 10%; height: 10%; border-radius: 50%; 
+    margin-left: 5%; margin-right: 5%; margin-top: 10px; 
     background: #5E5C5E; 
-    text-align: center; line-height: 1rem; vertical-align: middle; padding: 1rem; word-spacing: 30px;
+    text-align: center; line-height: 80px; vertical-align: middle;  /* padding: 1rem; */ /* word-spacing: 30px;*/
     text-transform: uppercase; }
