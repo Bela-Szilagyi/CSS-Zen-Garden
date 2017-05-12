@@ -28,7 +28,14 @@ a {color: white}
 
 header { background: #868486; position: relative; display: block;
     top: 10px; width: 24%; height: 24%; left: 50%; margin-left: -12%; /*half of width */   
-    color: #E6E4E6; padding: 10px; border-radius: 8px; }
+    color: #E6E4E6; padding: 10px; border-radius: 8px; 
+    animation-name: header_color; animation-duration: 4s; animation-iteration-count: infinite; }
+@keyframes header_color {
+    0% {background: #868486; color: #E6E4E6; }
+    50% {background: #E6E4E6; color: #868486; }
+    100% {background: #868486; color: #E6E4E6; }
+}
+
 
 .summary { background: #5E5C5E; position: relative; display: block;
     top: -12px; width: 32%; height: 32%; left: 50%; margin-left: -16%; /*half of width */   
@@ -41,7 +48,7 @@ header { background: #868486; position: relative; display: block;
 
 /* sidebar */
 
-aside {float: right}
+aside {float: right; }
 
 .design-selection { 
     background: #403E40; position: absolute; display: block;
@@ -58,12 +65,12 @@ aside {float: right}
     top: 8rem; width: auto; height: 4rem; right: 0%; margin-right: 0%; /*half of width */   
     color: #E6E4E6; padding: 10px; text-align: center; border-radius: 16px; z-index: 2; }
 
-ul {display: none}
+ul {display: none; }
 
 .design-selection:hover {z-index: 3}
 .design-archives:hover {z-index: 3}
 .zen-resources:hover {z-index: 3}
-.design-selection:hover ul {background: #403E40; display: block;
+.design-selection:hover ul {background: #403E40; display: block; 
     color: #E6E4E6; padding: 10px; text-align: center; border-radius: 16px;}
 .design-archives:hover ul {background: #5E5C5E; display: block;
     color: #E6E4E6; padding: 10px; text-align: center; border-radius: 16px; }
