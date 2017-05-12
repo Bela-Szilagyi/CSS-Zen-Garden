@@ -93,6 +93,8 @@ ul {display: none}
 footer a {float: left; display: inline-block; 
     width: 10%; height: 10%; border-radius: 50%; 
     margin-left: 5%; margin-right: 5%; margin-top: 10px; 
-    background: #5E5C5E; 
-    text-align: center; line-height: 80px; vertical-align: middle;  /* padding: 1rem; */ /* word-spacing: 30px;*/
+    background: #5E5C5E; color: #E6E4E6; 
+    text-align: center; line-height: 80px; vertical-align: middle; 
     text-transform: uppercase; }
+
+footer a:hover {background: #E6E4E6; color: #5E5C5E; }
